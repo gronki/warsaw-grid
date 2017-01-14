@@ -3,8 +3,8 @@
 // as following conditions are satisfied:
 // 1. the smallest size is named "sm" and its lower boundary is 0px
 // 2. the upper boundary of the largest size is named "infinity"
-$sizes:      sm,      md,       lg,      xl;
-$brkpnt: 0px,   638px,   838px,   1078px,  infinity;
+$sizes:            sm    ,   md    ,   lg                   ;
+$brkpnt:       0px  ,  640px  ,  960px  ,   infinity        ;
 
 // this can be changed to any values that suit you
 $gutter:    4%;

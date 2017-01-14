@@ -9,24 +9,19 @@ div.container {
   margin: 0px 2%;
   padding: 0px;
 }
-@media (min-width: 638px) {
+@media (min-width: 640px) {
   div.container {
     margin: 0px auto;
   }
 }
-@media (min-width: 638px) {
+@media (min-width: 640px) {
   div.container {
-    max-width: 618.86px;
+    max-width: 620.8px;
   }
 }
-@media (min-width: 838px) {
+@media (min-width: 960px) {
   div.container {
-    max-width: 812.86px;
-  }
-}
-@media (min-width: 1078px) {
-  div.container {
-    max-width: 1045.66px;
+    max-width: 931.2px;
   }
 }
 div.container div.row {
@@ -156,7 +151,7 @@ div.col.sm-12 {
   width: 96%;
 }
 
-@media (min-width: 638px) {
+@media (min-width: 640px) {
   div.col.md-1 {
     width: 4.33333%;
   }
@@ -205,7 +200,7 @@ div.col.sm-12 {
     width: 96%;
   }
 }
-@media (min-width: 838px) {
+@media (min-width: 960px) {
   div.col.lg-1 {
     width: 4.33333%;
   }
@@ -254,56 +249,7 @@ div.col.sm-12 {
     width: 96%;
   }
 }
-@media (min-width: 1078px) {
-  div.col.xl-1 {
-    width: 4.33333%;
-  }
-
-  div.col.xl-2 {
-    width: 12.66667%;
-  }
-
-  div.col.xl-3 {
-    width: 21%;
-  }
-
-  div.col.xl-4 {
-    width: 29.33333%;
-  }
-
-  div.col.xl-5 {
-    width: 37.66667%;
-  }
-
-  div.col.xl-6 {
-    width: 46%;
-  }
-
-  div.col.xl-7 {
-    width: 54.33333%;
-  }
-
-  div.col.xl-8 {
-    width: 62.66667%;
-  }
-
-  div.col.xl-9 {
-    width: 71%;
-  }
-
-  div.col.xl-10 {
-    width: 79.33333%;
-  }
-
-  div.col.xl-11 {
-    width: 87.66667%;
-  }
-
-  div.col.xl-12 {
-    width: 96%;
-  }
-}
-@media (max-width: 637px) {
+@media (max-width: 639px) {
   div.col.only-sm-1 {
     width: 4.33333%;
   }
@@ -352,7 +298,7 @@ div.col.sm-12 {
     width: 96%;
   }
 }
-@media (min-width: 638px) and (max-width: 837px) {
+@media (min-width: 640px) and (max-width: 959px) {
   div.col.only-md-1 {
     width: 4.33333%;
   }
@@ -401,7 +347,7 @@ div.col.sm-12 {
     width: 96%;
   }
 }
-@media (min-width: 838px) and (max-width: 1077px) {
+@media (min-width: 960px) {
   div.col.only-lg-1 {
     width: 4.33333%;
   }
@@ -447,55 +393,6 @@ div.col.sm-12 {
   }
 
   div.col.only-lg-12 {
-    width: 96%;
-  }
-}
-@media (min-width: 1078px) {
-  div.col.only-xl-1 {
-    width: 4.33333%;
-  }
-
-  div.col.only-xl-2 {
-    width: 12.66667%;
-  }
-
-  div.col.only-xl-3 {
-    width: 21%;
-  }
-
-  div.col.only-xl-4 {
-    width: 29.33333%;
-  }
-
-  div.col.only-xl-5 {
-    width: 37.66667%;
-  }
-
-  div.col.only-xl-6 {
-    width: 46%;
-  }
-
-  div.col.only-xl-7 {
-    width: 54.33333%;
-  }
-
-  div.col.only-xl-8 {
-    width: 62.66667%;
-  }
-
-  div.col.only-xl-9 {
-    width: 71%;
-  }
-
-  div.col.only-xl-10 {
-    width: 79.33333%;
-  }
-
-  div.col.only-xl-11 {
-    width: 87.66667%;
-  }
-
-  div.col.only-xl-12 {
     width: 96%;
   }
 }
