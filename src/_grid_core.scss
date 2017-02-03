@@ -82,6 +82,8 @@ div.container {
             display: block;
             float: left;
             margin: 0px $gutter / 2;
+            // by default, the column has 100% width (minus gutter)
+            width: 100% - $gutter;
         }
         // "the clear fix"
         &::after {
@@ -95,10 +97,6 @@ div.container {
             clear: both;
         }
     }
-}
-div.col {
-    // by default, the column has 100% width (minus gutter)
-    width: 100% - $gutter;
 }
 
 // this should never be used! internal helper
