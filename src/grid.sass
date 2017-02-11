@@ -7,9 +7,9 @@ $grid-base: 12
 // this should never be used! internal helper
 =column-base($g)
     @if $g > $grid-base
-        $g: $grid-base
-
-    width: percentage($g / $grid-base) - $gutter
+        width: 100% - $gutter
+    @else
+        width: percentage($g / $grid-base) - $gutter
 
 
 // this causes the given div to behave like a column of width $g
