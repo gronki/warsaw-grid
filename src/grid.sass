@@ -20,25 +20,12 @@ $gutter:    3%
 $grid-base: 12
 
 // this should never be used! internal helper
-=column-base($g)
+=column-width($g)
     @if $g > $grid-base
         width: 100% - $gutter
     @else
         width: percentage($g / $grid-base) - $gutter
 
-
-// this causes the given div to behave like a column of width $g
-// starting from size $bp. to force column on all sizes, use "all"
-=column($bp,$g)
-    display: block
-    float: left
-    width: 100% - $gutter
-    margin: 0px $gutter / 2
-    @if $bp == all
-        +column-base($g)
-    @else
-        +breakpoint($bp)
-            +column-base($g)
 
 .container
     /* the container class wraps all the content, centers it and gives it size */
@@ -93,8 +80,9 @@ $grid-base: 12
         +breakpoint($bp)
             @for $i from 1 through $grid-base
                 .col-#{$bp}-#{$i}
-                    +column-base($i)
+                    +column-width($i)
 
+    // generate the "default" col-N classes
     @for $i from 1 through $grid-base
         .col-#{$i}
             @extend .col-#{$size-uncollapse}-#{$i}
@@ -109,3 +97,10 @@ $grid-base: 12
         margin: 0px
         padding: 0px
         clear: both
+
+// this causes the given div to behave like a column of width $g
+// starting from size $bp
+=column($g, $bp: $size-uncollapse)
+    @extend .col
+    +breakpoint($bp)
+        +column-width($g)
