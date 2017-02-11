@@ -85,11 +85,6 @@ div.row
         /* by default, the column has 100% width (minus gutter) */
         width: 100% - $gutter
 
-    @for $i from 1 through $grid-base
-        .col-#{$i}
-            @extend .col
-            +column-base($i)
-
     @for $j from 1 through length($sizes)
         $bp: nth($sizes,$j)
         @for $i from 1 through $grid-base
@@ -99,6 +94,10 @@ div.row
             @for $i from 1 through $grid-base
                 .col-#{$bp}-#{$i}
                     +column-base($i)
+
+    @for $i from 1 through $grid-base
+        .col-#{$i}
+            @extend .col-#{$size-uncollapse}-#{$i}
 
     // This will generate classes that respond only to given size.
     // Uncomment if needed.

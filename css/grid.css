@@ -54,7 +54,7 @@ div.row.padded {
   margin-top: 1.5%;
   margin-bottom: 1.5%;
 }
-div.row .col, div.row .col-1, div.row .col-2, div.row .col-3, div.row .col-4, div.row .col-5, div.row .col-6, div.row .col-7, div.row .col-8, div.row .col-9, div.row .col-10, div.row .col-11, div.row .col-12, div.row .col-sm-1, div.row .col-sm-2, div.row .col-sm-3, div.row .col-sm-4, div.row .col-sm-5, div.row .col-sm-6, div.row .col-sm-7, div.row .col-sm-8, div.row .col-sm-9, div.row .col-sm-10, div.row .col-sm-11, div.row .col-sm-12, div.row .col-md-1, div.row .col-md-2, div.row .col-md-3, div.row .col-md-4, div.row .col-md-5, div.row .col-md-6, div.row .col-md-7, div.row .col-md-8, div.row .col-md-9, div.row .col-md-10, div.row .col-md-11, div.row .col-md-12, div.row .col-lg-1, div.row .col-lg-2, div.row .col-lg-3, div.row .col-lg-4, div.row .col-lg-5, div.row .col-lg-6, div.row .col-lg-7, div.row .col-lg-8, div.row .col-lg-9, div.row .col-lg-10, div.row .col-lg-11, div.row .col-lg-12 {
+div.row .col, div.row .col-sm-1, div.row .col-sm-2, div.row .col-sm-3, div.row .col-sm-4, div.row .col-sm-5, div.row .col-sm-6, div.row .col-sm-7, div.row .col-sm-8, div.row .col-sm-9, div.row .col-sm-10, div.row .col-sm-11, div.row .col-sm-12, div.row .col-md-1, div.row .col-1, div.row .col-md-2, div.row .col-2, div.row .col-md-3, div.row .col-3, div.row .col-md-4, div.row .col-4, div.row .col-md-5, div.row .col-5, div.row .col-md-6, div.row .col-6, div.row .col-md-7, div.row .col-7, div.row .col-md-8, div.row .col-8, div.row .col-md-9, div.row .col-9, div.row .col-md-10, div.row .col-10, div.row .col-md-11, div.row .col-11, div.row .col-md-12, div.row .col-12, div.row .col-lg-1, div.row .col-lg-2, div.row .col-lg-3, div.row .col-lg-4, div.row .col-lg-5, div.row .col-lg-6, div.row .col-lg-7, div.row .col-lg-8, div.row .col-lg-9, div.row .col-lg-10, div.row .col-lg-11, div.row .col-lg-12 {
   display: block;
   box-sizing: border-box;
   border: none;
@@ -64,42 +64,6 @@ div.row .col, div.row .col-1, div.row .col-2, div.row .col-3, div.row .col-4, di
   margin-right: 1.5% !important;
   margin-left: 1.5% !important;
   /* by default, the column has 100% width (minus gutter) */
-  width: 97%;
-}
-div.row .col-1 {
-  width: 5.33333%;
-}
-div.row .col-2 {
-  width: 13.66667%;
-}
-div.row .col-3 {
-  width: 22%;
-}
-div.row .col-4 {
-  width: 30.33333%;
-}
-div.row .col-5 {
-  width: 38.66667%;
-}
-div.row .col-6 {
-  width: 47%;
-}
-div.row .col-7 {
-  width: 55.33333%;
-}
-div.row .col-8 {
-  width: 63.66667%;
-}
-div.row .col-9 {
-  width: 72%;
-}
-div.row .col-10 {
-  width: 80.33333%;
-}
-div.row .col-11 {
-  width: 88.66667%;
-}
-div.row .col-12 {
   width: 97%;
 }
 div.row .col-sm-1 {
@@ -139,40 +103,40 @@ div.row .col-sm-12 {
   width: 97%;
 }
 @media (min-width: 640px) {
-  div.row .col-md-1 {
+  div.row .col-md-1, div.row .col-1 {
     width: 5.33333%;
   }
-  div.row .col-md-2 {
+  div.row .col-md-2, div.row .col-2 {
     width: 13.66667%;
   }
-  div.row .col-md-3 {
+  div.row .col-md-3, div.row .col-3 {
     width: 22%;
   }
-  div.row .col-md-4 {
+  div.row .col-md-4, div.row .col-4 {
     width: 30.33333%;
   }
-  div.row .col-md-5 {
+  div.row .col-md-5, div.row .col-5 {
     width: 38.66667%;
   }
-  div.row .col-md-6 {
+  div.row .col-md-6, div.row .col-6 {
     width: 47%;
   }
-  div.row .col-md-7 {
+  div.row .col-md-7, div.row .col-7 {
     width: 55.33333%;
   }
-  div.row .col-md-8 {
+  div.row .col-md-8, div.row .col-8 {
     width: 63.66667%;
   }
-  div.row .col-md-9 {
+  div.row .col-md-9, div.row .col-9 {
     width: 72%;
   }
-  div.row .col-md-10 {
+  div.row .col-md-10, div.row .col-10 {
     width: 80.33333%;
   }
-  div.row .col-md-11 {
+  div.row .col-md-11, div.row .col-11 {
     width: 88.66667%;
   }
-  div.row .col-md-12 {
+  div.row .col-md-12, div.row .col-12 {
     width: 97%;
   }
 }
