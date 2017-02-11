@@ -17,6 +17,7 @@
   display: block;
   box-sizing: border-box;
   border: none;
+  /* the margins can be safely overwritten */
   margin: 0px 1.5%;
   padding: 0px;
 }
@@ -38,6 +39,7 @@
 }
 
 .row {
+  /* rows need not be divs */
   box-sizing: border-box;
   display: block;
   border: none;
@@ -55,12 +57,16 @@
   margin-bottom: 1.5%;
 }
 .row .col, .row .col-sm-1, .row .col-sm-2, .row .col-sm-3, .row .col-sm-4, .row .col-sm-5, .row .col-sm-6, .row .col-sm-7, .row .col-sm-8, .row .col-sm-9, .row .col-sm-10, .row .col-sm-11, .row .col-sm-12, .row .col-md-1, .row .col-1, .row .col-md-2, .row .col-2, .row .col-md-3, .row .col-3, .row .col-md-4, .row .col-4, .row .col-md-5, .row .col-5, .row .col-md-6, .row .col-6, .row .col-md-7, .row .col-7, .row .col-md-8, .row .col-8, .row .col-md-9, .row .col-9, .row .col-md-10, .row .col-10, .row .col-md-11, .row .col-11, .row .col-md-12, .row .col-12, .row .col-lg-1, .row .col-lg-2, .row .col-lg-3, .row .col-lg-4, .row .col-lg-5, .row .col-lg-6, .row .col-lg-7, .row .col-lg-8, .row .col-lg-9, .row .col-lg-10, .row .col-lg-11, .row .col-lg-12 {
+  /* this is obvious for divs, but .col can be anything */
   display: block;
   box-sizing: border-box;
   border: none;
+  /* left-to-right layout only (so far) */
   float: left;
+  /* this can be overwritten */
   margin-top: 0;
   margin-bottom: 0;
+  /* margins need to be fixed for layout to work */
   margin-right: 1.5% !important;
   margin-left: 1.5% !important;
   /* by default, the column has 100% width (minus gutter) */

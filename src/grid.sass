@@ -32,7 +32,10 @@ $grid-base: 12
     display: block
     box-sizing: border-box
     border: none
+    /* the margins can be safely overwritten */
     margin: 0px $gutter/2
+    padding: 0px
+
     +breakpoint($size-uncollapse)
         /* starting from medium size, auto-center */
         margin: 0px auto
@@ -43,9 +46,9 @@ $grid-base: 12
         +breakpoint($sz)
             max-width: $bp * 0.97
 
-    padding: 0px
 
 .row
+    /* rows need not be divs */
     box-sizing: border-box
     display: block
     border: none
@@ -61,12 +64,16 @@ $grid-base: 12
     margin-left:    -$gutter/2 !important
     margin-right:   -$gutter/2  !important
     .col
+        /* this is obvious for divs, but .col can be anything */
         display: block
         box-sizing: border-box
         border: none
+        /* left-to-right layout only (so far) */
         float: left
+        /* this can be overwritten */
         margin-top:     0
         margin-bottom:  0
+        /* margins need to be fixed for layout to work */
         margin-right:   $gutter / 2 !important
         margin-left:    $gutter / 2 !important
         /* by default, the column has 100% width (minus gutter) */
