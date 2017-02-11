@@ -28,7 +28,7 @@ $brkpnt:       0px  ,  640px  ,  960px  ,   infinity
 
 // this mixin allows you to define a style for given-or-larger devices
 // which is useful during the mobile-first approach
-=breakpoint($size: sm)
+=breakpoint($size: md)
     @for $i from 1 through length($sizes)
         $sz: nth($sizes,$i)
         @if $size == $sz
