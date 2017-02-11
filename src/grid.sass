@@ -108,6 +108,9 @@ $grid-base: 12
 // this causes the given div to behave like a column of width $g
 // starting from size $bp
 =column($g, $bp: $size-uncollapse)
-    @extend .col
-    +breakpoint($bp)
-        +column-width($g)
+    @if $g > $grid-base
+        /* Warning: #{$g} exceeds #{$grid-base}. */
+        /* Column width trimmed to #{$grid-base}. */
+        @extend .col-#{$bp}-#{$grid-base}
+    @else
+        @extend .col-#{$bp}-#{$g}
