@@ -3,10 +3,13 @@
 // as following conditions are satisfied:
 // 1. the smallest size is named "sm" and its lower boundary is 0px
 // 2. the upper boundary of the largest size is named "infinity"
+// 3. the smallest desktop size is named "md"
 $sizes:            sm    ,   md    ,   lg
 $brkpnt:       0px  ,  640px  ,  960px  ,   infinity
 
-// this mixin allows you to define style only for a given size
+// This mixin allows you to define style only for a given size.
+// Use this only if absolutely needed. If designing a new website,
+// better stick to using breakpoint mixin (below).
 =respond ($size: sm)
     @for $i from 1 through length($sizes)
         $sz: nth($sizes,$i)
@@ -26,8 +29,9 @@ $brkpnt:       0px  ,  640px  ,  960px  ,   infinity
                 @media  (min-width: $b-lo) and (max-width: $b-hi - 1px)
                     @content
 
-// this mixin allows you to define a style for given-or-larger devices
-// which is useful during the mobile-first approach
+// This mixin allows you to define a style for given-or-larger devices
+// which is useful during the mobile-first approach. It is a recommended
+// way to design new webpages.
 =breakpoint($size: md)
     @for $i from 1 through length($sizes)
         $sz: nth($sizes,$i)

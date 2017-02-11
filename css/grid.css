@@ -1,3 +1,17 @@
+/****************************************************
+ ****************** WARSAW GRID *********************
+ ****************************************************
+ *   Yet another (probably useless) grid system     *
+ *                written in SASS.                  *
+ *      (If you don't like it, don't use it.)       *
+ ****************************************************
+ *     Copyright (c) 2017 Dominik Gronkiewicz       *
+ *              All rights reserved.                *
+ * Distributed under MIT license (see LICENSE file) *
+ *      http://github.com/gronki/warsaw-grid        *
+ ****************************************************
+ ****************************************************
+ */
 div.container {
   /* the container class wraps all the content, centers it and gives it size */
   display: block;
@@ -211,5 +225,3 @@ div.row::after {
   padding: 0px;
   clear: both;
 }
-
-/*# sourceMappingURL=grid.css.map */
