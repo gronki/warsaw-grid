@@ -73,7 +73,7 @@ div.row
        and also with content not wrapped in rows/columns */
     margin-left:    -$gutter/2 !important
     margin-right:   -$gutter/2  !important
-    div.col
+    .col
         display: block
         box-sizing: border-box
         border: none
@@ -86,18 +86,18 @@ div.row
         width: 100% - $gutter
 
     @for $i from 1 through $grid-base
-        div.col-#{$i}
-            @extend div.col
+        .col-#{$i}
+            @extend .col
             +column-base($i)
 
     @for $j from 1 through length($sizes)
         $bp: nth($sizes,$j)
         @for $i from 1 through $grid-base
-            div.col-#{$bp}-#{$i}
-                @extend div.col
+            .col-#{$bp}-#{$i}
+                @extend .col
         +breakpoint($bp)
             @for $i from 1 through $grid-base
-                div.col-#{$bp}-#{$i}
+                .col-#{$bp}-#{$i}
                     +column-base($i)
 
     // This will generate classes that respond only to given size.
@@ -105,11 +105,11 @@ div.row
     // @for $j from 1 through length($sizes)
     //     $bp: nth($sizes,$j)
     //     @for $i from 1 through $grid-base
-    //         div.col-#{$bp}-only-#{$i}
-    //             @extend div.col
+    //         .col-#{$bp}-only-#{$i}
+    //             @extend .col
     //     +respond($bp)
     //         @for $i from 1 through $grid-base
-    //             div.col-#{$bp}-only-#{$i}
+    //             .col-#{$bp}-only-#{$i}
     //                 +column-base($i)
 
 
