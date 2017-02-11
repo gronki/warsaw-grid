@@ -1,11 +1,10 @@
 
-SCSSFLAGS := -C --sourcemap=none
 cssdir = ../css
 
 all: $(cssdir)/grid.css
 
-$(cssdir)/%.css: %.scss _respond.scss
-	scss --style compact $(SCSSFLAGS) $<:$@
+$(cssdir)/%.css: %.sass _respond.sass
+	sass --style compact $<:$@
 
 clean:
 	rm -f $(cssdir)/*.css

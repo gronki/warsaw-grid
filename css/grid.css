@@ -53,3 +53,5 @@ div.container div.row div.col-sm-12 { width: 97%; }
   div.container div.row div.col-lg-11 { width: 88.66667%; }
   div.container div.row div.col-lg-12 { width: 97%; } }
 div.container div.row::after { /* "the clear fix" */ content: ""; display: table; border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; clear: both; }
+
+/*# sourceMappingURL=grid.css.map */
