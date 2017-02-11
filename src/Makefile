@@ -11,7 +11,7 @@ $(cssdir)/grid.min.css: grid.sass $(deps)
 	sass --style compressed $<:$@
 
 $(cssdir)/%.css.gz: $(cssdir)/%.css
-	gzip $<
+	gzip -f $<
 
 clean:
 	rm -f $(cssdir)/*.css $(cssdir)/*.gz
