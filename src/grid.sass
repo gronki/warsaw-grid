@@ -44,7 +44,7 @@ $grid-base: 12
         $sz: nth($sizes,$i)
         $bp: nth($brkpnt,$i)
         +breakpoint($sz)
-            max-width: $bp * 0.97
+            max-width: floor($bp * 0.97)
 
 
 .row

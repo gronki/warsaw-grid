@@ -29,12 +29,12 @@
 }
 @media (min-width: 640px) {
   .container {
-    max-width: 620.8px;
+    max-width: 620px;
   }
 }
 @media (min-width: 960px) {
   .container {
-    max-width: 931.2px;
+    max-width: 931px;
   }
 }
 
