@@ -47,18 +47,26 @@ div.row
     box-sizing: border-box
     display: block
     border: none
-    margin-top: $gutter / 2
-    margin-bottom: $gutter / 2
+    /* by default, we assume no margins between rows */
+    margin-top:     0
+    margin-bottom:  0
+    &.padded
+        /* one can set class padded if needed */
+        margin-top:     $gutter / 2
+        margin-bottom:  $gutter / 2
     /* negative margins allow us to keep margins consistent in nested columns
        and also with content not wrapped in rows/columns */
-    margin-left: -$gutter/2 !important
-    margin-right: -$gutter/2  !important
+    margin-left:    -$gutter/2 !important
+    margin-right:   -$gutter/2  !important
     div.col
         display: block
         box-sizing: border-box
         border: none
         float: left
-        margin: 0px $gutter / 2
+        margin-top:     0
+        margin-bottom:  0
+        margin-right:   $gutter / 2 !important
+        margin-left:    $gutter / 2 !important
         /* by default, the column has 100% width (minus gutter) */
         width: 100% - $gutter
 
@@ -84,16 +92,11 @@ div.row
     //     @for $i from 1 through $grid-base
     //         div.col-#{$bp}-only-#{$i}
     //             @extend div.col
-    //
-    //
     //     +respond($bp)
     //         @for $i from 1 through $grid-base
     //             div.col-#{$bp}-only-#{$i}
     //                 +column-base($i)
-    //
-    //
-    //
-    //
+
 
     &::after
         /* "the clear fix" */
