@@ -50,10 +50,11 @@ $grid-base: 12
     /* negative margins allow us to keep margins consistent in nested columns */
     /* and also with content not wrapped in rows/columns */
     margin: $gutter (- $gutter / 2)
+    display: flex
+    flex-wrap: wrap
 
     .col
         +reset
-        float: left
         /* no vertical padding and half gutter on each side */
         margin: 0px ($gutter / 2)
         /* by default, the column has 100% width (minus gutter) */
