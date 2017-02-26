@@ -48,6 +48,8 @@ $body-width:    80rem   !default
             @for $i from 1 through $grid-base
                 .col-#{$bp}-#{$i}
                     width: percentage($i / $grid-base) - $gutter
+                .#{$bp}-off-#{$i}
+                    margin-left: percentage($i / $grid-base) + $gutter/2
 
     // generate the "default" col-N classes
     @for $i from 1 through $grid-base
