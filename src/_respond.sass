@@ -4,6 +4,7 @@ $breakpoint-uncollapse: md !default
 
 =breakpoint ($size: $breakpoint-uncollapse)
     @if $size == all
+        /* applies to all screens */
         @content
     @else if map-has-key($breakpoints, $size)
         $min-width: map-get($breakpoints,$size)
@@ -11,7 +12,9 @@ $breakpoint-uncollapse: md !default
             @content
         @else
             @media (min-width: $min-width)
+                /* styles for size: #{$size} */
                 @content
     @else
         @warn "This breakpoint name (" + $size +") is invalid. Try one of the following: all," + map-keys($breakpoints)
+        /* invalid breakpoint detected: #{$size} */
         @content
